@@ -1,0 +1,89 @@
+*{
+    /* font-family: 'Raleway',sans-serif; */
+    overflow-x:hidden;
+}
+.brandLogo{
+    letter-spacing: 0.3em;
+    font-size:2.1em;
+}
+
+.ulNav{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+.ulNav li{
+    padding:0 1em;
+}
+
+.ulNav li a{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+
+}
+.ulNav li a::before{
+    content:'';
+    width:100%;
+    height:0.2em;
+    background:white;
+    transform: scale(0,1);
+    transition: 150ms ease-in-out;
+    transform-origin: center;
+    margin-bottom:0.5em;
+    border-radius: 2em;
+}
+.ulNav li a:hover::before{
+    transform: scale(1,1);
+}
+.userBtns{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.socialIcons{
+   font-size: 1.4em;
+    text-align: center;
+    padding:0.1em 0;
+}
+.socialIcons i{
+    margin:0.5em;
+    transition: 150ms ease-in-out;
+}
+
+
+.fa-facebook{
+    color:#8b9dc3;
+}
+
+.fa-twitter{
+    color:#00acee;
+}
+
+.fa-instagram{
+    color:#F56040;
+}
+.fa-google{
+    color:#D44638
+}
+.socialIcons a i:hover{
+    color:white;
+}
+
+.welcomeBox,.sideBox{
+    border-radius:10px;
+    box-shadow:0 0 5px 2px #7b7b7b
+}
+.sideBox{
+}
+
+@media only screen and (max-width: 1024px) {
+   
+    .navBtns{
+        width:6em;
+        margin:0.2em 0;
+    }
+    
+  }
